@@ -1,0 +1,13 @@
+package com.cobblejobs.config;
+
+public enum SkillType {
+    MONEY_MULTIPLIER,
+    PARTY_BATTLE_BUFF,
+    BREED_IV_BONUS,
+    BREED_BONUS_EGG_CHANCE,
+    BATTLE_EXP_MULTIPLIER,
+    EXTRA_JOB_SLOT,
+    POKEBALL_REFUND_CHANCE,
+    SPECIAL_CATCH_BONUS
+}
+

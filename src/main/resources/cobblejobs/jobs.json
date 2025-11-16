@@ -1,0 +1,199 @@
+{
+  "max_jobs_per_player": 2,
+  "jobs": [
+    {
+      "id": "battle_prodigy",
+      "display_name": "Battle Prodigy",
+      "origin": "Dexholder / Ace Trainer inspired",
+      "category": "TRAINER",
+      "max_level": 50,
+      "actions": [
+        {
+          "id": "win_any_battle",
+          "event": "BATTLE_WIN",
+          "base_money": 50.0,
+          "base_xp": 10.0
+        }
+      ],
+      "skills": [
+        {
+          "id": "battle_prodigy_money_boost_1",
+          "type": "MONEY_MULTIPLIER",
+          "unlock_level": 5,
+          "data": {
+            "multiplier": 1.1
+          }
+        },
+        {
+          "id": "battle_prodigy_money_boost_2",
+          "type": "MONEY_MULTIPLIER",
+          "unlock_level": 15,
+          "data": {
+            "multiplier": 1.25
+          }
+        },
+        {
+          "id": "battle_prodigy_party_buff",
+          "type": "PARTY_BATTLE_BUFF",
+          "unlock_level": 30,
+          "data": {
+            "attack_multiplier": 1.05,
+            "defense_multiplier": 1.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "evolution_savant",
+      "display_name": "Evolution Savant",
+      "origin": "Dexholder / Breeder inspired",
+      "category": "BREEDER",
+      "max_level": 50,
+      "actions": [
+        {
+          "id": "pokemon_evolved",
+          "event": "POKEMON_EVOLVED",
+          "base_money": 75.0,
+          "base_xp": 12.0
+        },
+        {
+          "id": "pokemon_bred",
+          "event": "POKEMON_BRED",
+          "base_money": 50.0,
+          "base_xp": 10.0
+        }
+      ],
+      "skills": [
+        {
+          "id": "evolution_savant_iv_bonus_1",
+          "type": "BREED_IV_BONUS",
+          "unlock_level": 10,
+          "data": {
+            "iv_floor": 10
+          }
+        },
+        {
+          "id": "evolution_savant_iv_bonus_2",
+          "type": "BREED_IV_BONUS",
+          "unlock_level": 25,
+          "data": {
+            "iv_floor": 15
+          }
+        },
+        {
+          "id": "evolution_savant_bonus_egg",
+          "type": "BREED_BONUS_EGG_CHANCE",
+          "unlock_level": 35,
+          "data": {
+            "chance": 0.05
+          }
+        }
+      ]
+    },
+    {
+      "id": "field_tactician",
+      "display_name": "Field Tactician",
+      "origin": "PTU field commander inspired",
+      "category": "SUPPORT",
+      "max_level": 50,
+      "actions": [
+        {
+          "id": "win_any_battle_support",
+          "event": "BATTLE_WIN",
+          "base_money": 40.0,
+          "base_xp": 8.0
+        }
+      ],
+      "skills": [
+        {
+          "id": "field_tactician_exp_boost",
+          "type": "BATTLE_EXP_MULTIPLIER",
+          "unlock_level": 10,
+          "data": {
+            "multiplier": 1.1
+          }
+        },
+        {
+          "id": "field_tactician_team_buff",
+          "type": "PARTY_BATTLE_BUFF",
+          "unlock_level": 25,
+          "data": {
+            "attack_multiplier": 1.03,
+            "defense_multiplier": 1.03,
+            "speed_multiplier": 1.03
+          }
+        },
+        {
+          "id": "field_tactician_extra_job_slot",
+          "type": "EXTRA_JOB_SLOT",
+          "unlock_level": 40,
+          "data": {
+            "extra_slots": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "capture_specialist",
+      "display_name": "Capture Specialist",
+      "origin": "PTU Capture Specialist inspired",
+      "category": "CAPTURE",
+      "max_level": 50,
+      "actions": [
+        {
+          "id": "catch_any_pokemon",
+          "event": "POKEMON_CAPTURED",
+          "base_money": 30.0,
+          "base_xp": 6.0
+        },
+        {
+          "id": "catch_rare_pokemon",
+          "event": "POKEMON_CAPTURED",
+          "base_money": 80.0,
+          "base_xp": 15.0,
+          "filters": {
+            "rarity": "RARE"
+          }
+        },
+        {
+          "id": "catch_shiny_or_legendary",
+          "event": "POKEMON_CAPTURED",
+          "base_money": 200.0,
+          "base_xp": 40.0,
+          "filters": {
+            "shiny": true,
+            "legendary": true
+          }
+        }
+      ],
+      "skills": [
+        {
+          "id": "capture_specialist_refund_chance",
+          "type": "POKEBALL_REFUND_CHANCE",
+          "unlock_level": 10,
+          "data": {
+            "chance": 0.1
+          }
+        },
+        {
+          "id": "capture_specialist_money_boost",
+          "type": "MONEY_MULTIPLIER",
+          "unlock_level": 20,
+          "data": {
+            "multiplier": 1.2
+          }
+        },
+        {
+          "id": "capture_specialist_special_catch_bonus",
+          "type": "SPECIAL_CATCH_BONUS",
+          "unlock_level": 35,
+          "data": {
+            "shiny_multiplier": 1.5,
+            "legendary_multiplier": 1.5
+          }
+        }
+      ]
+    }
+  ]
+}
+

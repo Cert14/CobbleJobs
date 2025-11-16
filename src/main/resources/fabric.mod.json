@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblejobs",
+  "version": "${version}",
+
+  "name": "CobbleJobs",
+  "description": "Role-based jobs and skill system for Cobblemon servers inspired by Dexholders and PTU classes.",
+  "authors": [
+    "You",
+    "Assistant"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/cobblejobs/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cobblejobs.CobbleJobsMod"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "=1.21.1",
+    "fabric-api": "*",
+    "cobblemon": ">=1.7.0"
+  }
+}
+

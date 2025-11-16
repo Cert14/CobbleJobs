@@ -1,0 +1,13 @@
+{
+  "cobblejobs.command.jobs.title": "CobbleJobs",
+  "cobblejobs.command.jobs.list": "Your active jobs:",
+  "cobblejobs.command.jobs.none": "You currently have no active jobs.",
+  "cobblejobs.command.jobs.available": "Available jobs:",
+  "cobblejobs.command.jobs.joined": "You joined the job %s.",
+  "cobblejobs.command.jobs.left": "You left the job %s.",
+  "cobblejobs.command.jobs.already_joined": "You already have that job.",
+  "cobblejobs.command.jobs.limit_reached": "You have reached the maximum number of jobs.",
+  "cobblejobs.command.jobs.not_found": "Unknown job id.",
+  "cobblejobs.command.jobs.info_title": "Job info: %s"
+}
+
